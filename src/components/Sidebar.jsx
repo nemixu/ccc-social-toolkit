@@ -60,7 +60,9 @@ function Sidebar({
       </nav>
 
       <div className="panel-wrap">
-        <LogoUpload logo={logo} onUpload={onLogoUpload} />
+        {activeTab === "banner" && (
+          <LogoUpload logo={logo} onUpload={onLogoUpload} />
+        )}
 
         <BannerPanel
           active={activeTab === "banner"}
