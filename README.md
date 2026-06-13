@@ -60,6 +60,7 @@ cp .env.example .env.local
 ```
 
 Then fill in:
+
 - **Strava API** (optional — for route preview links)
 - **Firebase** — project ID, API key, auth domain, etc.
 
@@ -90,6 +91,7 @@ Outputs to `dist/` — ready to deploy to GitHub Pages.
    - `tags` — optional tag metadata
 
 4. Set Firestore security rules:
+
    ```firestore
    rules_version = '2';
    service cloud.firestore {
@@ -111,11 +113,13 @@ Outputs to `dist/` — ready to deploy to GitHub Pages.
 ## Deploy to GitHub Pages
 
 1. Update `vite.config.js` with your repo name:
+
    ```javascript
-   base: '/ccc-social-toolkit/'
+   base: "/ccc-social-toolkit/";
    ```
 
 2. Build:
+
    ```bash
    npm run build
    ```
