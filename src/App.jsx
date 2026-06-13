@@ -14,7 +14,7 @@ import Templates from "./components/Templates";
 import Toast from "./components/Toast";
 import hashtagSets from "./data/hashtags";
 
-const defaultLogo = "/assets/ccc-trans.png";
+const defaultLogo = `${import.meta.env.BASE_URL}assets/ccc-trans.png`;
 
 const initialBanner = {
   line1: "CLONDALKIN",
